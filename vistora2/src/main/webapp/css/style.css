@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fff2;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #4CAF50;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+    justify-content: center;
+}
+.product {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+.buy-btn {
+    background: green;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}

@@ -1,0 +1,80 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | EcoStore</title>
+  <style>
+    body {
+      background-color: #f7f9fc;
+      color: #333;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      background-color: #e0f7fa;
+      color: #006064;
+      border: 1px solid #4dd0e1;
+      border-radius: 4px;
+      padding: 10px;
+      margin: 8px 0;
+      width: 250px;
+      transition: background-color 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      background-color: #b2ebf2;
+      outline: none;
+      border-color: #00838f;
+    }
+
+    /* Placeholder styling for consistent appearance */
+    ::-webkit-input-placeholder { /* Chrome, Safari, Opera */
+      color: #00838f;
+      opacity: 1;
+    }
+    :-moz-placeholder { /* Firefox 4–18 */
+      color: #00838f;
+      opacity: 1;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #00838f;
+      opacity: 1; /* ensure full visibility */ /* :contentReference[oaicite:1]{index=1} */
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: #00838f;
+      opacity: 1;
+    }
+
+    button {
+      background-color: #00838f;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #006064;
+    }
+  </style>
+</head>
+<body>
+  <h2>Create Account</h2>
+  <form action="RegisterServlet" method="post">
+    <input type="text" name="fullname" placeholder="Full Name" required><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
